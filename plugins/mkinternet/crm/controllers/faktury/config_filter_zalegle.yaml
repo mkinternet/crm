@@ -1,0 +1,6 @@
+scopes:
+    fakturazalegla:
+        label: Zaległa
+        type: checkbox
+        default: 1
+        conditions: terminplatnosci<NOW() AND zaplacona=false

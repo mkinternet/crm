@@ -1,0 +1,30 @@
+zdarzenia:
+    label: Zdarzenia
+    manage:
+        list: $/mkinternet/crm/models/zdarzenia/klienci_zdarzenia.yaml
+        form: $/mkinternet/crm/models/zdarzenia/fields.yaml
+        showSearch: true
+        showSorting: true
+        recordsPerPage: 10
+    view:
+        list: $/mkinternet/crm/models/zdarzenia/klienci_zdarzenia.yaml
+        recordUrl: mkinternet/crm/zdarzenia/update/:id
+        toolbarButtons: 'create'
+        showSearch: true
+        showSorting: true
+        recordsPerPage: 10
+uslugi:
+    label: Usługi
+    manage:
+        list: $/mkinternet/crm/models/uslugi/klienci_uslugi.yaml
+        form: $/mkinternet/crm/models/uslugi/fields.yaml
+        showSearch: true
+        showSorting: true
+        recordsPerPage: 10
+    view:
+        list: $/mkinternet/crm/models/uslugi/klienci_uslugi.yaml
+        recordUrl: mkinternet/crm/uslugi/update/:id
+        toolbarButtons: 'create'
+        showSearch: true
+        showSorting: true
+        recordsPerPage: 10        

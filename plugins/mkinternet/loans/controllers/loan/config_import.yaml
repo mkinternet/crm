@@ -1,0 +1,10 @@
+import:
+    title: Import
+    modelClass: Mkinternet\Loans\Models\Loanimport
+    list: $/mkinternet/loans/models/loan/columns_import.yaml
+    redirect: mkinternet/loans/loan
+    defaultFormatOptions:
+        delimiter: ';'
+        enclosure: '"'
+        escape: '\'
+        encoding: 'utf-8'    

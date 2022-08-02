@@ -1,0 +1,10 @@
+name: Uslugistatus
+form: $/mkinternet/crm/models/uslugistatus/fields.yaml
+modelClass: Mkinternet\Crm\Models\Uslugistatus
+defaultRedirect: mkinternet/crm/uslugistatus
+create:
+    redirect: 'mkinternet/crm/uslugistatus/update/:id'
+    redirectClose: mkinternet/crm/uslugistatus
+update:
+    redirect: mkinternet/crm/uslugistatus
+    redirectClose: mkinternet/crm/uslugistatus

@@ -1,0 +1,43 @@
+scopes:
+  
+    status:
+        label: Status
+        modelClass: Mkinternet\Crm\Models\Uslugistatus
+        conditions: uslugistatus_id in (:filtered)
+        nameFrom: nazwa
+
+    klient:
+        label: Klient
+        type: text
+        scope: klienciFiltr
+        size: 8   
+    nazwa:
+        label: Usługa
+        type: text
+        scope: uslugiFiltr
+    zaplacona:
+        label: Zapłacona
+        type: switch
+        default: 0
+        conditions: (zaplacona+1) = :filtered
+    fakturaniewystawiona:
+        label: Faktura
+        type: switch
+        default: 0
+        conditions: IF(:filtered=1,isnull(faktury_id), not isnull(faktury_id!=0))
+    datawygasnieciauslugi:
+        label: Data wygaśnięcia
+        type: daterange
+        conditions: wygasa >= ':after' AND wygasa <= ':before'
+    cenaod:
+        label: Cena od
+        type: number
+        conditions: cena >= :filtered
+    cenado:
+        label: Cena do
+        type: number
+        conditions: cena <= :filtered
+    created_at:
+        label: Dodana
+        type: daterange
+        conditions: created_at >= ':after' AND created_at <= ':before'

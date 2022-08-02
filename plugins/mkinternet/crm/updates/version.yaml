@@ -1,0 +1,89 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Updated table mkinternet_crm_faktury'
+    - create_table_mkinternet_crm_faktury.php
+1.0.3:
+    - 'Updated table mkinternet_crm_klienci'
+    - create_table_mkinternet_crm_klienci.php
+1.0.4:
+    - 'Updated table mkinternet_crm_platnosc'
+    - create_table_mkinternet_crm_platnosc.php
+1.0.5:
+    - 'Updated table mkinternet_crm_uslugi'
+    - create_table_mkinternet_crm_uslugi.php
+1.0.6:
+    - 'Updated table mkinternet_crm_vat'
+    - create_table_mkinternet_crm_vat.php
+1.0.7:
+    - 'Created table mkinternet_crm_uslugistatus'
+    - builder_table_create_mkinternet_crm_uslugistatus.php
+1.0.8:
+    - 'Updated table mkinternet_crm_uslugi'
+    - builder_table_update_mkinternet_crm_uslugi.php
+1.0.9:
+    - 'Created table mkinternet_crm_zdarzenia'
+    - builder_table_create_mkinternet_crm_zdarzenia.php
+1.0.10:
+    - 'Updated table mkinternet_crm_zdarzenia'
+    - builder_table_update_mkinternet_crm_zdarzenia.php
+1.0.11:
+    - 'Updated table mkinternet_crm_zdarzenia'
+    - builder_table_update_mkinternet_crm_zdarzenia_2.php
+1.0.12:
+    - 'Updated table mkinternet_crm_zdarzenia'
+    - builder_table_update_mkinternet_crm_zdarzenia_3.php
+1.0.13:
+    - 'Updated table mkinternet_crm_zdarzenia'
+    - builder_table_update_mkinternet_crm_zdarzenia_4.php
+1.0.14:
+    - 'Updated table mkinternet_crm_uslugi'
+    - builder_table_update_mkinternet_crm_uslugi_2.php
+1.0.15:
+    - 'Updated table mkinternet_crm_faktury'
+    - builder_table_update_mkinternet_crm_faktury.php
+1.0.16:
+    - 'Updated table mkinternet_crm_faktury'
+    - builder_table_update_mkinternet_crm_faktury_2.php
+1.0.17:
+    - 'Updated table mkinternet_crm_klienci'
+    - builder_table_update_mkinternet_crm_klienci.php
+1.0.18:
+    - 'Created table mkinternet_crm_tagi'
+    - builder_table_create_mkinternet_crm_tagi.php
+1.0.19:
+    - 'Updated table mkinternet_crm_tagi'
+    - builder_table_update_mkinternet_crm_tagi.php
+1.0.20:
+    - 'Created table mkinternet_crm_klienci_tagi'
+    - builder_table_create_mkinternet_crm_klienci_tagi.php
+1.0.21:
+    - 'Updated table mkinternet_crm_zdarzenia'
+    - builder_table_update_mkinternet_crm_zdarzenia_5.php
+1.0.22:
+    - 'Updated table mkinternet_crm_uslugi'
+    - builder_table_update_mkinternet_crm_uslugi_3.php
+1.0.23:
+    - 'Updated table mkinternet_crm_uslugi'
+    - builder_table_update_mkinternet_crm_uslugi_4.php
+1.0.24:
+    - 'Updated table mkinternet_crm_uslugi'
+    - builder_table_update_mkinternet_crm_uslugi5.php
+1.0.25:
+    - 'Updated table mkinternet_crm_faktury'
+    - builder_table_update_mkinternet_crm_faktury_3.php
+1.0.26:
+    - 'Updated table mkinternet_crm_zdarzenia'
+    - builder_table_update_mkinternet_crm_zdarzenia_6.php
+1.0.27:
+    - 'Updated table mkinternet_crm_klienci'
+    - builder_table_update_mkinternet_crm_klienci_2.php
+1.0.28:
+    - 'Updated table mkinternet_crm_klienci'
+    - builder_table_update_mkinternet_crm_klienci_3.php
+1.0.29:
+    - 'Created table mkinternet_crm_hosting'
+    - builder_table_create_mkinternet_crm_hosting.php
+1.0.30:
+    - 'Updated table mkinternet_crm_klienci'
+    - builder_table_update_mkinternet_crm_klienci_4.php

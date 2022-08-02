@@ -1,0 +1,19 @@
+
+
+<?if($record->faktury_id== null){?>
+<a class="<?=$record->fakturabtnclass?>" href="<?= Backend::url('mkinternet/crm/faktury/usluga').'/'.$record->id ?>" title="Wystaw fakturę">
+	<span class="oc-icon-folder"></span>
+</a>
+<?}?>
+
+<?if($record->wygasa!='' && $record->przedluzona==0){?>
+	<a class="<?=$record->wygasabtnclass?>" href="<?= Backend::url('mkinternet/crm/uslugi/przedluz').'/'.$record->id ?>" title="Przedłuż usługę">
+		<span class="oc-icon-copy"></span>
+	</a>
+<?}?>
+	
+<?if($record->wygasa==''){?>
+	<a class="<?=$record->duplikujbtnclass?>" href="<?= Backend::url('mkinternet/crm/uslugi/duplikuj').'/'.$record->id ?>" title="Duplikuj usługę">
+		<span class="oc-icon-clone"></span>
+	</a>
+<?}?>

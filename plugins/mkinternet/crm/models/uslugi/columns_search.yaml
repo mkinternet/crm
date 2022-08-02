@@ -1,0 +1,28 @@
+columns:
+    nazwa:
+        label: Usługa
+        type: text
+        searchable: true
+    created_at:
+        label: Dodana
+        type: date
+        format: d-m-Y
+    klient_id:
+        label: Klient
+        type: text
+        select: firma
+        relation: klienci
+    cena:
+        label: 'Cena netto'
+        type: number        
+    vat_id:
+        label: VAT
+        type: text
+        select: nazwa
+        relation: vat
+    zaplacona:
+        label: Zaplacona
+        type: switch
+        select: zaplacona
+              
+

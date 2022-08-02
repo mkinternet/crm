@@ -1,0 +1,25 @@
+scopes:
+
+    faturaklient:
+        label: Klient
+        type: text
+        scope: klienciFiltr
+        size: 8   
+    fakturanazwa:
+        label: Usługa
+        type: text
+        scope: uslugiFiltr        
+    fakturazaplacona:
+        label: Zapłacona
+        type: checkbox
+        default: 0
+        conditions: zaplacona <> false
+    fakturaniezaplacona:
+        label: Nie zapłacona
+        type: checkbox
+        default: 0
+        conditions: zaplacona <> true    
+    datawystawienia:
+        label: Data wystawienia
+        type: daterange
+        conditions: datawystawienia >= ':after' AND datawystawienia <= ':before'

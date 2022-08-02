@@ -1,0 +1,66 @@
+tabs:
+    fields:
+        nazwa:
+            label: Nazwa
+            span: auto
+            required: 1
+            type: text
+            tab: 'Dane podstawowe'
+        klienci_id:
+            label: Klient
+            emptyOption: 'Wybierz klienta'
+            showSearch: true
+            span: auto
+            placeholder: 'Wybierz klienta'
+            default: '0'
+            required: 1
+            type: dropdown
+            tab: 'Dane podstawowe'
+        cena:
+            label: 'Cena netto'
+            span: auto
+            default: '0'
+            type: number
+            tab: 'Dane podstawowe'
+        waluta:
+            label: Waluta
+            showSearch: true
+            span: auto
+            type: dropdown
+            tab: 'Dane podstawowe'
+        wygasa:
+            label: Wygasa
+            mode: date
+            span: auto
+            type: datepicker
+            tab: 'Dane podstawowe'
+        vat_id:
+            label: 'Podatek VAT'
+            span: auto
+            required: 1
+            type: dropdown
+            tab: 'Dane podstawowe'
+        zaplacona:
+            label: Zapłacona
+            span: auto
+            type: checkbox
+            tab: 'Dane podstawowe'
+        uslugistatus_id:
+            label: 'Status usługi'
+            showSearch: true
+            span: auto
+            emptyOption: 'nie dotyczy'
+            type: dropdown
+            tab: 'Dane podstawowe'
+        opis:
+            label: Opis
+            size: giant
+            span: full
+            type: textarea
+            tab: Opis
+        opisprywatny:
+            label: Opis prywatny
+            size: giant
+            span: full
+            type: textarea
+            tab: Opis prywatny

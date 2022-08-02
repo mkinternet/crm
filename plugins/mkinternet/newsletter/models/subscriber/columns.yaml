@@ -1,0 +1,17 @@
+columns:
+    created_at:
+        label: Dodany
+        type: datetime
+    recordid:
+        label: 'Id Orbiorca'
+        type: number
+    email:
+        label: Email
+        type: text
+        searchable: true
+    mailinglist:
+        label: 'Lista mailingowa'
+        type: text
+        searchable: true
+        select: name
+        relation: mailinglist

@@ -1,0 +1,10 @@
+name: Zdarzenia
+form: $/mkinternet/crm/models/zdarzenia/fields.yaml
+modelClass: Mkinternet\Crm\Models\Zdarzenia
+defaultRedirect: mkinternet/crm/zdarzenia
+create:
+    redirect: 'mkinternet/crm/zdarzenia/update/:id'
+    redirectClose: mkinternet/crm/zdarzenia
+update:
+    redirect: mkinternet/crm/zdarzenia
+    redirectClose: mkinternet/crm/zdarzenia

@@ -1,0 +1,19 @@
+title: Uslugi
+modelClass: Mkinternet\Crm\Models\Uslugi
+customViewPath: $/mkinternet/crm/controllers/uslugi/list
+list: $/mkinternet/crm/models/uslugi/columns.yaml
+recordUrl: 'mkinternet/crm/uslugi/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: created_at
+    direction: asc
+    
+filter: config_filter_wygasajace.yaml
+    
+toolbar:
+    buttons: list_toolbar_wygasajace
+    search:
+        prompt: 'backend::lang.list.search_prompt'

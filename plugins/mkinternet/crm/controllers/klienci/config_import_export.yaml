@@ -1,0 +1,9 @@
+import:
+    title: Import klientów
+    modelClass: Mkinternet\Crm\Models\Klienci
+    list: $/mkinternet/crm/models/klienc/columns.yaml
+
+export:
+    title: Eksport klientów
+    modelClass: Mkinternet\Crm\Models\Klienci
+    list: $/mkinternet/crm/models/klienc/columns.yaml

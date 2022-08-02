@@ -1,0 +1,10 @@
+name: Hosting
+form: $/mkinternet/crm/models/hosting/fields.yaml
+modelClass: Mkinternet\Crm\Models\Hosting
+defaultRedirect: mkinternet/crm/hosting
+create:
+    redirect: 'mkinternet/crm/hosting/update/:id'
+    redirectClose: mkinternet/crm/hosting
+update:
+    redirect: mkinternet/crm/hosting
+    redirectClose: mkinternet/crm/hosting

@@ -1,0 +1,13 @@
+fields:
+    recordid:
+        label: 'ID Odbiorca'
+        span: auto
+        type: text
+    email:
+        label: Email
+        span: auto
+        type: text
+    mailinglist:
+            type: taglist
+            mode: relation            
+            nameFrom: name        

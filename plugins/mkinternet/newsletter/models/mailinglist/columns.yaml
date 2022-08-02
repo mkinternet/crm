@@ -1,0 +1,18 @@
+columns:
+    id:
+        label: id
+        type: number
+    created_at:
+        label: Dodany
+        type: datetime
+    name:
+        label: Nazwa
+        type: text
+        searchable: true
+    subscount:
+        label: Liczba subskrybentów
+        type: text
+        sortable: false
+        cssClass: t-nw
+        valueFrom: subscount
+        align: right        

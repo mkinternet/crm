@@ -1,0 +1,23 @@
+fields:
+    emailtitle:
+        label: 'Tytuł e-maila'
+        span: full
+        required: 1
+        type: text
+    emailcontent:
+        label: 'Tresć emaila'
+        size: ''
+        span: full
+        required: 1
+        type: richeditor
+    mailinglist:
+        label: 'Lista mailingowa'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    campagintitle:
+        label: 'Tytuł kampani'
+        span: auto
+        required: 1
+        type: text

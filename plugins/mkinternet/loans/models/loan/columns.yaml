@@ -1,0 +1,36 @@
+columns:
+    loanid:
+        label: loanid
+        type: number
+        searchable: true
+    borrower:
+        label: borrower
+        type: text
+        searchable: true        
+    loan_value:
+        label: Value
+        type: number
+    loan_commision:
+        label: Commision
+        type: number
+    loan_extracharge:
+        label: Dodatkowe opłaty
+        type: number        
+    loan_percentage:
+        label: loan_percentage
+        type: number
+    loan_payedamount:
+        label: Kwota otrzymana
+        type: number
+    loan_grantdate:
+        label: loan_grantdate
+        type: date
+    loan_payeddate:
+        label: loan_payeddate
+        type: date
+    loan_currency:
+        label: loan_currency
+        type: text
+    platform:
+        label: platform
+        type: text             

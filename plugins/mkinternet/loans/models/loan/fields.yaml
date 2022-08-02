@@ -1,0 +1,45 @@
+fields:
+    loanid:
+        label: 'Loan id'
+        span: auto
+        type: text
+    borrower:
+        label: Pożyczkobiorca
+        type: text
+        span: auto        
+    loan_value:
+        label: Wartosć pożyczki
+        type: number
+        span: auto        
+    loan_commision:
+        label: Prowizja
+        type: number
+        span: auto        
+    loan_extracharge:
+        label: Dodatkowe opłaty
+        type: number
+        span: auto                
+    loan_percentage:
+        label: Oprocentowanie
+        type: number
+        span: auto        
+    loan_payedamount:
+        label: loan_payedamount
+        type: number
+        span: auto        
+    loan_grantdate:
+        label: Data przyznania
+        type: text
+        span: auto        
+    loan_payeddate:
+        label: Data opłacenia
+        type: text
+        span: auto        
+    loan_currency:
+        label: Waluta
+        type: text
+        span: auto        
+    platform:
+        label: platform
+        type: text
+        span: auto

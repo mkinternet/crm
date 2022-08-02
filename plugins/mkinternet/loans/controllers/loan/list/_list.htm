@@ -1,0 +1,77 @@
+
+<div class="control-list list-scrollable" data-control="listwidget">
+    <table class="table data" data-control="rowlink">
+        <thead>
+            <?= $this->makePartial('list_head_row') ?>
+        </thead>
+        <tbody>
+            <?php if (count($records)): ?>
+                <?= $this->makePartial('list_body_rows') ?>
+				
+			<tr class="no-data">
+			
+				<td colspan="<?= $columnTotal ?>" class="nolink">
+				
+				<?
+				$sum['loan_value'] = 0;
+				$sum['loan_commision'] = 0;
+				$sum['profit'] = 0;
+				$sum['loss'] = 0;
+				
+				foreach($records as $record){
+					$sum['loan_value'] += $record->loan_value;
+					
+					if($record->loan_payeddate!=null){
+						$sum['loan_commision'] += $record->loan_commision;
+						
+						
+						$sum['profit'] += ($record->loan_payedamount - $record->loan_value + $record->loan_commision + $record->loan_extracharge);
+						
+					}else{
+					
+						$sum['loss'] += ($record->loan_value);
+					}
+					
+		//			print ($sum['profit'].' ');
+					
+				}
+				?>
+				
+								
+				Loans total: <strong><?=$sum['loan_value']?></strong>
+				Commisions total: <strong><?=$sum['loan_commision']?></strong>
+				<!--Percentage profit: <strong><?=$sum['profit']?></strong>-->
+				Total profit: <strong><?=($sum['profit'])?></strong>
+				Loss: <strong><?=($sum['loss'])?></strong>
+				Profit-loss:<strong><?=($sum['profit']-$sum['loss'])?></strong> 
+
+				</td>
+			
+			</tr>				
+				
+            <?php else: ?>
+                <tr class="no-data">
+                    <td colspan="<?= $columnTotal ?>" class="nolink">
+                        <p class="no-data"><?= $noRecordsMessage ?></p>
+                    </td>
+                </tr>
+            <?php endif ?>
+			
+
+			
+			
+			
+        </tbody>
+    </table>
+    <?php if ($showPagination): ?>
+        <div class="list-footer">
+            <div class="list-pagination">
+                <?php if ($showPageNumbers): ?>
+                    <?= $this->makePartial('list_pagination') ?>
+                <?php else: ?>
+                    <?= $this->makePartial('list_pagination_simple') ?>
+                <?php endif ?>
+            </div>
+        </div>
+    <?php endif ?>
+</div>

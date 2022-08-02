@@ -1,0 +1,10 @@
+columns:
+    id:
+        label: Id
+        type: number
+    nazwa:
+        label: nazwa
+        type: text
+    wartosc:
+        label: wartosc
+        type: text

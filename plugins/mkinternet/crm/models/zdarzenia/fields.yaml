@@ -1,0 +1,20 @@
+fields:
+    nazwa:
+        label: Nazwa
+        span: auto
+        type: text
+    klienci_id:
+        label: Klient
+        showSearch: true
+        span: auto
+        type: dropdown
+    opis:
+        label: Opis
+        span: full
+        size: ''
+        type: textarea
+    termin:
+        label: Termin
+        mode: date
+        span: auto
+        type: datepicker

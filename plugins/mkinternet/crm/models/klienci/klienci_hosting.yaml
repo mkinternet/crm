@@ -1,0 +1,40 @@
+columns:
+    id:
+        label: ID
+        searchable: true
+        type: number
+    firma:
+        label: Firma
+        type: text
+        searchable: true
+        cssClass: t-nw        
+      
+    telefon:
+        label: Telefon
+        type: text
+        searchable: true
+        cssClass: t-nw
+    created_at:
+        label: Dodany
+        type: date
+        cssClass: t-nw                
+    adresemail:
+        label: 'Adres email'
+        type: text
+        searchable: true
+        cssClass: t-nw                
+             
+    hosting:
+        label: Hosting
+        type: text
+        select: nazwa
+        relation: hosting
+    hostingcena:
+        label: Cena
+        type: text
+        select: cena
+        relation: hosting
+    hostingrabat:
+        label: Rabat
+        type: number
+

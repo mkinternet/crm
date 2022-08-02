@@ -1,0 +1,39 @@
+<div class="report-widget">
+    <h3>Zdarzenia na najbliższe <?=$liczbadni?> dni</h3>
+
+	<?if(!$zdarzenia->isEmpty()){?>
+
+    <div class="table-container">
+        <table class="table data" data-provides="rowlink">
+            <thead>
+                <tr>
+                    <th><span>Termin</span></th>
+					<th><span>Dodane</span></th>
+                    <th><span>Zdarzenie</span></th>
+                    <th><span>Kontrahent</span></th>
+                </tr>
+            </thead>
+            <tbody>
+			
+				<?foreach($zdarzenia as $zdarzenie){?>
+					<tr>
+						<td><?=$zdarzenie->termin?></td>				
+						<td><?=$zdarzenie->created_at?></td>				
+						<td><?=$zdarzenie->nazwa?></td>
+						<td><?=$zdarzenie->klienci->firma?></td>
+
+					</tr>
+				<?}?>
+
+            </tbody>
+        </table>
+    </div>
+	
+	<?}else{?>
+	
+		<p class="flash-message static info">
+			Brak nadchodzących zdarzeń
+		</p>
+	
+	<?}?>
+</div>

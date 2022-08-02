@@ -1,0 +1,6 @@
+scopes:
+    fakturaniezaplacona:
+        label: Nie zapłacona
+        type: checkbox
+        default: 1
+        conditions: zaplacona <> true   

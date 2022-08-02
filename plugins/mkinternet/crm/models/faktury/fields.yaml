@@ -1,0 +1,72 @@
+tabs:
+    fields:
+        numer:
+            label: 'Numer faktury'
+            span: auto
+            type: text
+            tab: 'Szczegóły faktury'
+            required: 1            
+        datawystawienia:
+            label: 'Data wystawienia'
+            mode: date
+            span: auto
+            type: datepicker
+            default: now
+            format: d-m-Y
+            tab: 'Szczegóły faktury'
+            required: 1            
+        datasprzedazy:
+            label: 'Data sprzedaży'
+            mode: date
+            span: auto
+            type: datepicker
+            default: now
+            format: d-m-Y
+            tab: 'Szczegóły faktury'
+            required: 1            
+        terminplatnosci:
+            label: 'Termin płatności'
+            mode: date
+            span: auto
+            type: datepicker
+            default: now
+            format: d-m-Y
+            tab: 'Szczegóły faktury'
+            required: 1            
+        klienci_id:
+            label: Klient
+            showSearch: true
+            span: auto
+            type: dropdown
+            tab: 'Szczegóły faktury'
+            required: 1            
+        platnosc_id:
+            label: 'Forma płatności'
+            showSearch: true
+            span: auto
+            placeholder: 'Wybierz formę płatności'
+            emptyOption: 'Nie wybrano'
+            required: 1
+            type: dropdown
+            tab: 'Szczegóły faktury'
+        uwagi:
+            label: Uwagi
+            size: small
+            span: full
+            type: textarea
+            tab: 'Szczegóły faktury'
+        zaplacona:
+            label: Zapłacona
+            span: auto
+            type: checkbox
+            tab: 'Szczegóły faktury'
+        uslugi_lista:
+            label: Pozycje
+            span: full
+            context:
+                - create
+                - update
+                - preview
+            type: partial
+            path: ~/plugins/mkinternet/crm/controllers/faktury/_pozycje.htm
+            tab: Pozycje

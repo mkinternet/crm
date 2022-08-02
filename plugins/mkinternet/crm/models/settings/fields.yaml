@@ -1,0 +1,82 @@
+tabs:
+    fields:
+        firma[nazwa]:
+            label: Nazwa firmy
+            type: text        
+            span: auto  
+            tab: Dane firmy
+        firma[osoba]:
+            label: Osoba kontaktowa
+            type: text        
+            span: auto         
+            tab: Dane firmy            
+        firma[nip]:
+            label: Nip
+            type: text        
+            span: auto     
+            tab: Dane firmy
+        firma[adres]:
+            label: Adres
+            type: text        
+            span: auto                
+            tab: Dane firmy            
+        firma[kodmiasta]:
+            label: Kod miasta
+            type: text        
+            span: auto                
+            tab: Dane firmy            
+        firma[miasto]:
+            label: Miasto
+            type: text        
+            span: auto                
+            tab: Dane firmy            
+        firma[nrkonta]:
+            label: Numer konta
+            type: text        
+            span: auto 
+            tab: Dane firmy
+        firma[bank]:
+            label: Bank
+            type: text        
+            span: auto
+            tab: Dane firmy            
+        firma[telefon]:
+            label: Telefon
+            type: text        
+            span: auto
+            tab: Dane firmy
+        firma[adresemail]:
+            label: Adres e-mail
+            type: text        
+            span: auto
+            tab: Dane firmy
+        firma[stronawww]:
+            label: Strona www
+            type: text        
+            span: auto
+            tab: Dane firmy            
+        ksiegowaemail:
+            label: Adres e-mail księgowej
+            type: text        
+            span: auto
+            tab: Dane firmy            
+        logo:
+            label: Logo
+            type: fileupload
+            mode: image
+            tab: Dane firmy
+        smsapi[token]:
+            label: Token
+            type: text
+            span: auto
+            tab: SMS Api
+        smsapi[nadawca]:
+            label: Nadawca
+            type: text
+            span: auto
+            tab: SMS Api
+        crm[emailtest]:
+            label: Testowy e-mail powiadomień
+            type: text
+            span: auto
+            tab: CRM

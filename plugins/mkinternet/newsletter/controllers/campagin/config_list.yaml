@@ -1,0 +1,12 @@
+list: $/mkinternet/newsletter/models/campagin/columns.yaml
+modelClass: Mkinternet\Newsletter\Models\Campagin
+title: Campagin
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'mkinternet/newsletter/campagin/update/:id'

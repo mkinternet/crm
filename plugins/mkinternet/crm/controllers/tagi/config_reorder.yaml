@@ -1,0 +1,4 @@
+title: Tagi
+modelClass: Mkinternet\Crm\Models\Tagi
+toolbar:
+    buttons: reorder_toolbar

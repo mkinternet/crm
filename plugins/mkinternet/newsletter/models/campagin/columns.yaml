@@ -1,0 +1,26 @@
+columns:
+    id:
+        label: id
+        type: number
+    created_at:
+        label: Dodana
+        type: datetime
+    emailtitle:
+        label: Tytuł
+        type: text
+        searchable: true
+    sentdate:
+        label: Wysłana
+        type: datetime
+    recievecount:
+        label: 'Liczba odbiorców'
+        type: text
+    mailinglist_id:
+        label: 'Lista mailingowa'
+        type: text
+        select: name
+        relation: mailinglist
+    campagintitle:
+        label: 'Tytuł kampani'
+        type: text
+        searchable: true

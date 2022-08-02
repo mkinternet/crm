@@ -1,0 +1,4 @@
+title: Uslugi
+modelClass: Mkinternet\Crm\Models\Uslugi
+toolbar:
+    buttons: reorder_toolbar

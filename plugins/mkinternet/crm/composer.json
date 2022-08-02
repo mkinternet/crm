@@ -1,0 +1,10 @@
+{
+    "name": "mkinternet/crm-plugin",
+    "type": "october-plugin",
+    "description": "CRM MK Internet",
+    "require": {
+        "composer/installers": "~1.0",
+        "smsapi/php-client": "^3.0",
+        "guzzlehttp/psr7": "^2.1"		
+    }
+}

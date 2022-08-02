@@ -1,0 +1,15 @@
+title: Klienci
+modelClass: Mkinternet\Crm\Models\Klienci
+list: $/mkinternet/crm/models/klienci/klienci_hosting.yaml
+recordUrl: 'mkinternet/crm/klienci/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+filter: config_filter_hosting.yaml
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+
+

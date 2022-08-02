@@ -1,0 +1,11 @@
+scopes:
+
+    created_at:
+        label: Dodane
+        type: daterange
+        conditions: created_at >= ':after' AND created_at <= ':before'
+    dozrobienia:
+        label: Do zrobienia
+        type: checkbox
+        conditions: NOT ISNULL(termin)
+    

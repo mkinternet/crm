@@ -1,0 +1,10 @@
+name: Uslugi
+form: $/mkinternet/crm/models/uslugi/fields.yaml
+modelClass: Mkinternet\Crm\Models\Uslugi
+defaultRedirect: mkinternet/crm/uslugi
+create:
+    redirect: 'mkinternet/crm/uslugi/update/:id'
+    redirectClose: mkinternet/crm/uslugi
+update:
+    redirect: mkinternet/crm/uslugi
+    redirectClose: mkinternet/crm/uslugi

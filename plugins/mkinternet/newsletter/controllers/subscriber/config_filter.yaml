@@ -1,0 +1,7 @@
+scopes:
+    mailinglist:
+        label       : Listymy mailingowe
+        type        : group
+        modelClass  : Mkinternet\Newsletter\Models\Mailinglist
+        nameFrom    : name
+        conditions  : id in (select subscriber_id from mkinternet_newsletter_mailinglist_subscriber where mailinglist_id IN(:filtered))        

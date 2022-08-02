@@ -1,0 +1,10 @@
+name: Platnosc
+form: $/mkinternet/crm/models/platnosc/fields.yaml
+modelClass: Mkinternet\crm\Models\Platnosc
+defaultRedirect: mkinternet/crm/platnosc
+create:
+    redirect: 'mkinternet/crm/platnosc/update/:id'
+    redirectClose: mkinternet/crm/platnosc
+update:
+    redirect: mkinternet/crm/platnosc
+    redirectClose: mkinternet/crm/platnosc

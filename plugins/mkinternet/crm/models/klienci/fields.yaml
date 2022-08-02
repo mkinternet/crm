@@ -1,0 +1,126 @@
+tabs:
+    fields:
+        firma:
+            label: Firma
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        osoba:
+            label: 'Osoba kontaktowa'
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        panstwo:
+            label: Państwo
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        kodmiasta:
+            label: 'Kod miasta'
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        miasto:
+            label: Miasto
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        adres:
+            label: Adres
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        telefon:
+            label: Telefon
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        komorka:
+            label: Drugi telefon
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        nip:
+            label: Nip
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        regon:
+            label: Regon
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        adresemail:
+            label: 'Adres e-mail'
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        stronawww:
+            label: 'Strona www'
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        kontohostingowe:
+            label: 'Konto hostingowe'
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'
+        hostingrabat:
+            label: Hosting rabat
+            span: auto
+            type: number
+            tab: 'Dane podstawowe'            
+        abonament:
+            label: Abonament
+            span: auto
+            type: checkbox
+            tab: 'Dane podstawowe'
+        hosting:
+            label: 'Hosting'
+            showSearch: true
+            span: auto
+            emptyOption: 'nie dotyczy'
+            type: dropdown
+            tab: 'Dane podstawowe'
+        aktywny:
+            label: Aktywny
+            span: auto
+            type: checkbox
+            tab: 'Dane podstawowe'
+        tagi:
+            type: taglist
+            mode: relation            
+            tab: 'Dane podstawowe'
+            nameFrom: nazwa
+        notatka:
+            label: Notatka
+            size: large
+            span: full
+            type: textarea
+            tab: 'Dane dodatkowe'
+        adreskoperta:
+            label: 'Adres koperta'
+            size: ''
+            span: auto
+            type: textarea
+            tab: 'Dane dodatkowe'
+        zdarzenia:
+            label: Zdarzenia
+            span: full
+            context:
+                - create
+                - update
+                - preview
+            type: partial
+            path: ~/plugins/mkinternet/crm/controllers/zdarzenia/_pozycje.htm
+            tab: Zdarzenia
+        uslugi:
+            label: Usługi
+            span: full
+            context:
+                - create
+                - update
+                - preview
+            type: partial
+            path: ~/plugins/mkinternet/crm/controllers/uslugi/_pozycje.htm
+            tab: Usługi

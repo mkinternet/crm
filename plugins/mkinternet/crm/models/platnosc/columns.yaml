@@ -1,0 +1,7 @@
+columns:
+    id:
+        label: Id
+        type: number
+    nazwa:
+        label: Płatność
+        type: text

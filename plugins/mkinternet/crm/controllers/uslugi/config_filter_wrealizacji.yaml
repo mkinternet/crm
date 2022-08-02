@@ -1,0 +1,11 @@
+scopes:
+  
+
+
+    wrealizacji:
+        label: W realizacji
+        type: checkbox
+        default: 1
+        conditions: uslugistatus_id!=0
+
+

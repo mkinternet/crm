@@ -1,0 +1,30 @@
+subject = "[MK Internet] Powiadomienie o nieuregulowanej fakturze"
+==
+
+Witam
+
+Do dnia dzisiejszego nie otrzymaliśmy płatności za fakturę {{numer}}.
+
+Termin płatności minął {{ terminplatnosci|date('d-m-Y') }} 
+
+Prosimy o dokonanie przelewu:
+Tytuł płatności: faktura {{ numer }}
+Kwota przelewu: {{ wartosc }} zł
+
+Jeżeli przelew za fakturę został już wykonany, dziękujemy.
+
+
+==
+
+<p>Witam<br />
+<br />
+Do dnia dzisiejszego nie otrzymaliśmy płatności za fakturę <strong>{{numer}}</strong>.</p>
+<p>&nbsp;</p>
+
+<p>Termin płatności minął {{ terminplatnosci|date('d-m-Y') }} </p>
+<p></p>
+<p>Prosimy o dokonanie przelewu:</p>
+<p>Tytuł płatności: faktura {{ numer }}</p>
+<p>Kwota przelewu: {{ wartosc }} zł</p>
+<p></p>
+<p>Jeżeli przelew za fakturę został już wykonany, dziękujemy.</p>

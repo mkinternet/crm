@@ -1,0 +1,10 @@
+name: Faktury
+form: $/mkinternet/crm/models/faktury/fields.yaml
+modelClass: Mkinternet\Crm\Models\Faktury
+defaultRedirect: mkinternet/crm/faktury
+create:
+    redirect: 'mkinternet/crm/faktury/update/:id'
+    redirectClose: mkinternet/crm/faktury
+update:
+    redirect: mkinternet/crm/faktury
+    redirectClose: mkinternet/crm/faktury

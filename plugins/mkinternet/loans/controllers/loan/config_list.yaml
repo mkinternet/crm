@@ -1,0 +1,14 @@
+list: $/mkinternet/loans/models/loan/columns.yaml
+modelClass: Mkinternet\Loans\Models\Loan
+customViewPath: $/mkinternet/loans/controllers/loan/list
+title: Loan
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 120
+filter: config_filter.yaml
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'mkinternet/loans/loan/update/:id'

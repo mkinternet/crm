@@ -1,0 +1,16 @@
+scopes:
+    aktywny:
+        label: Aktywny
+        type: checkbox
+        conditions: aktywny=true       
+        default: true
+    abonament:
+        label: Hosting
+        type: checkbox
+        conditions: abonament=true
+        default: true
+    hostingrabat:
+        label: Hosting rabat
+        type: checkbox
+        conditions: not isnull(hostingrabat)
+        default: false

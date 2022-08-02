@@ -1,0 +1,10 @@
+name: Loan
+form: $/mkinternet/loans/models/loan/fields.yaml
+modelClass: Mkinternet\Loans\Models\Loan
+defaultRedirect: mkinternet/loans/loan
+create:
+    redirect: 'mkinternet/loans/loan/update/:id'
+    redirectClose: mkinternet/loans/loan
+update:
+    redirect: mkinternet/loans/loan
+    redirectClose: mkinternet/loans/loan

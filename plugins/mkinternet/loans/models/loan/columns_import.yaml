@@ -1,0 +1,34 @@
+columns:
+    loanid:
+        label: Numer wniosku
+        type: number
+    borrower:
+        label: Pożyczkobiorca
+        type: text
+    loan_value:
+        label: Kwota pożyczki
+        type: number
+    loan_commision:
+        label: w tym bonus
+        type: number
+    loan_extracharge:
+        label: Bonus za przedłużenia
+        type: number        
+    loan_percentage:
+        label: Oprocentowanie
+        type: number
+    loan_payedamount:
+        label: Spłacona kwota
+        type: number
+    loan_grantdate:
+        label: Data udzielenia pożyczki
+        type: text
+    loan_payeddate:
+        label: Data oznaczenia spłaty
+        type: text
+    loan_currency:
+        label: Waluta
+        type: text
+    platform:
+        label: platform
+        type: text        

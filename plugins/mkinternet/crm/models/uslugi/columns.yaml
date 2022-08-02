@@ -1,0 +1,51 @@
+columns:
+    nazwa:
+        label: Usługa
+        type: text
+        searchable: true
+        cssClass: t-nw
+    created_at:
+        label: Dodana
+        type: date
+        format: d-m-Y
+        cssClass: t-nw
+    klient_id:
+        label: Klient
+        type: text
+        select: firma
+        relation: klienci
+    cena:
+        label: 'Cena netto'
+        type: number
+        format: '%.2f'
+        valueFrom: cena
+    vat_id:
+        label: VAT
+        type: text
+        select: nazwa
+        relation: vat
+    zaplacona:
+        label: Zaplacona
+        type: switch
+        select: zaplacona
+    wygasa:
+        label: Wygasa
+        type: date
+        select: wygasa
+        cssClass: t-nw
+    faktura:
+        label: Faktura
+        type: switch
+        select: faktury_id
+    uslugistatus_id:
+        label: Status
+        type: text
+        select: nazwa
+        relation: uslugistatus
+        cssClass: t-nw
+    Przedluzbtn:
+        type: partial
+        path: content_btn
+        label: Opcje
+        sortable: false
+        cssClass: nolink

@@ -1,0 +1,24 @@
+<div class="control-tabs content-tabs tabs-flush" data-control="tab">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#uslugi_wszystkie">Usługi wszystkie</a></li>
+        <li><a href="#uslugi_tenmiesiac">Usługi ten miesiąc</a></li>
+        <li><a href="#uslugi_wrealizacji">Usługi w realizacji</a></li>
+		<li><a href="#uslugi_wygasajace">Usługi wygasające</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active">
+            <?= $this->listRender('uslugi_wszystkie') ?>
+        </div>
+        <div class="tab-pane">
+            <?= $this->listRender('uslugi_tenmiesiac') ?>
+        </div>		
+        <div class="tab-pane">
+            <?= $this->listRender('uslugi_wrealizacji') ?>
+        </div>
+
+        <div class="tab-pane">
+            <?= $this->listRender('uslugi_wygasajace') ?>
+        </div>
+
+    </div>
+</div>

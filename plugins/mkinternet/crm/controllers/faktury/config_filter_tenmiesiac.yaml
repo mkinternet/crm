@@ -1,0 +1,11 @@
+scopes:
+
+    faturaklient:
+        label: Klient
+        type: text
+        scope: klienciFiltr
+        size: 8   
+    fakturanazwa:
+        label: Usługa
+        type: text
+        scope: uslugiFiltr        

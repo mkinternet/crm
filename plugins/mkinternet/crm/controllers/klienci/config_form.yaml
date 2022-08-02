@@ -1,0 +1,10 @@
+name: Klienci
+form: $/mkinternet/crm/models/klienci/fields.yaml
+modelClass: Mkinternet\Crm\Models\Klienci
+defaultRedirect: mkinternet/crm/klienci
+create:
+    redirect: 'mkinternet/crm/klienci/update/:id'
+    redirectClose: mkinternet/crm/klienci
+update:
+    redirect: mkinternet/crm/klienci
+    redirectClose: mkinternet/crm/klienci

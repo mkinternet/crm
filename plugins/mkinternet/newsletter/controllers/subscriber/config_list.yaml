@@ -1,0 +1,13 @@
+list: $/mkinternet/newsletter/models/subscriber/columns.yaml
+modelClass: Mkinternet\Newsletter\Models\Subscriber
+title: Subscriber
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+filter: config_filter.yaml
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'mkinternet/newsletter/subscriber/update/:id'

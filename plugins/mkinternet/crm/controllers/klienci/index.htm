@@ -1,0 +1,18 @@
+
+<div class="control-tabs content-tabs tabs-flush" data-control="tab">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#klienci_wszyscy">Klienci wszyscy</a></li>
+        <li><a href="#klienci_hosting">Klienci hosting</a></li>
+
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active">
+            <?= $this->listRender('klienci_wszyscy') ?>
+        </div>
+        <div class="tab-pane">
+            <?= $this->listRender('klienci_hosting') ?>
+        </div>		
+
+
+    </div>
+</div>

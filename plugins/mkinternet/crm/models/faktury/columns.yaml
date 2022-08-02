@@ -1,0 +1,51 @@
+columns:
+    datawystawienia:
+        label: 'Wystawiona'
+        type: date
+        cssClass: t-nw
+    numer:
+        label: Numer
+        type: text
+    klienci_id:
+        label: Klient
+        type: text
+        select: firma
+        relation: klienci
+    zaplacona:
+        label: Zapłacona
+        type: inetis-list-switch
+        icon: true
+    terminplatnosci:
+        label: 'Płatność do'
+        type: date
+        cssClass: t-nw
+    wartoscnetto:
+        label: 'Wartość netto'
+        type: text
+        sortable: false
+        cssClass: t-nw
+        valueFrom: wartoscnetto
+        format: %.2f
+        align: right
+    wartoscvat:
+        label: VAT
+        type: text
+        sortable: false
+        cssClass: t-nw
+        valueFrom: wartoscvat
+        format: %.2f
+        align: right
+    wartoscbrutto:
+        label: 'Wartość brutto'
+        type: text
+        sortable: false
+        cssClass: t-nw
+        valueFrom: wartoscbrutto
+        format: %.2f
+        align: right
+    fakturapdfbtn:
+        type: partial
+        path: content_fakturapdfbtn
+        label: PDF
+        sortable: false
+        cssClass: nolink

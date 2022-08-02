@@ -1,0 +1,41 @@
+plugin:
+    name: 'mkinternet.crm::lang.plugin.name'
+    description: 'mkinternet.crm::lang.plugin.description'
+    author: Mkinternet
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Usługi
+        url: mkinternet/crm/uslugi
+        icon: icon-life-ring
+    main-menu-item2:
+        label: Faktury
+        url: mkinternet/crm/faktury
+        icon: icon-life-ring
+    main-menu-item3:
+        label: Klienci
+        url: mkinternet/crm/klienci
+        icon: icon-life-ring
+        sideMenu:
+            side-menu-item:
+                label: Usługi
+                url: mkinternet/crm/uslugi
+                icon: icon-sitemap
+    main-menu-item4:
+        label: Słowniki
+        url: mkinternet/crm/vat
+        icon: icon-life-ring
+        sideMenu:
+            side-menu-item:
+                label: Vat
+                url: mkinternet/crm/vat
+                icon: icon-sitemap
+            side-menu-item2:
+                label: Płatności
+                url: mkinternet/crm/platnosc
+                icon: icon-sitemap
+            side-menu-item3:
+                label: 'Usługi status'
+                url: mkinternet/crm/uslugistatus
+                icon: icon-sitemap

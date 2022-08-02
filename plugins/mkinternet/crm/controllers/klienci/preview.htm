@@ -1,0 +1,31 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('mkinternet/crm/klienci') ?>">Klienci</a></li>
+        <li><?= e($this->pageTitle) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+
+
+<div class="row">
+	<div class="col-md-12">
+		<a href="<?= Backend::url('mkinternet/crm/klienci/update/'.$formModel->id) ?>" class="btn btn-primary">Edytuj</a>
+	</div>
+</div>
+
+
+<?php if (!$this->fatalError): ?>
+
+    <div class="form-preview">
+        <?= $this->formRenderPreview() ?>
+    </div>
+
+<?php else: ?>
+    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+<?php endif ?>
+
+<p>
+    <a href="<?= Backend::url('mkinternet/crm/klienci') ?>" class="btn btn-default oc-icon-chevron-left">
+        <?= e(trans('backend::lang.form.return_to_list')) ?>
+    </a>
+</p>

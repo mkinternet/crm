@@ -1,0 +1,20 @@
+plugin:
+    name: 'mkinternet.newsletter::lang.plugin.name'
+    description: 'mkinternet.newsletter::lang.plugin.description'
+    author: Mkinternet
+    icon: oc-icon-envelope
+    homepage: ''
+navigation:
+    main-menu-item-newsletter:
+        label: Newsletter
+        url: mkinternet/newsletter/subscriber
+        icon: icon-envelope
+        sideMenu:
+            side-menu-item:
+                label: Subskrybenci
+                url: mkinternet/newsletter/subscriber
+                icon: icon-chain
+            side-menu-item2:
+                label: 'Listy mailingowe'
+                url: mkinternet/newsletter/mailinglist
+                icon: icon-sitemap

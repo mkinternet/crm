@@ -1,0 +1,10 @@
+name: Mailinglist
+form: $/mkinternet/newsletter/models/mailinglist/fields.yaml
+modelClass: Mkinternet\Newsletter\Models\Mailinglist
+defaultRedirect: mkinternet/newsletter/mailinglist
+create:
+    redirect: 'mkinternet/newsletter/mailinglist/update/:id'
+    redirectClose: mkinternet/newsletter/mailinglist
+update:
+    redirect: mkinternet/newsletter/mailinglist
+    redirectClose: mkinternet/newsletter/mailinglist

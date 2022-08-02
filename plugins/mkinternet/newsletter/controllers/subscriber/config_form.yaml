@@ -1,0 +1,10 @@
+name: Subscriber
+form: $/mkinternet/newsletter/models/subscriber/fields.yaml
+modelClass: Mkinternet\Newsletter\Models\Subscriber
+defaultRedirect: mkinternet/newsletter/subscriber
+create:
+    redirect: 'mkinternet/newsletter/subscriber/update/:id'
+    redirectClose: mkinternet/newsletter/subscriber
+update:
+    redirect: mkinternet/newsletter/subscriber
+    redirectClose: mkinternet/newsletter/subscriber

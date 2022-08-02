@@ -1,0 +1,15 @@
+scopes:
+    borrower:
+        label: Borrower
+        type: text
+        conditions: borrower like '%:filtered%'
+        size: 8   
+    loan_payeddate:
+        label: Payed date
+        type: daterange
+        conditions: loan_payeddate >= ':after' AND loan_payeddate <= ':before'
+    payed:
+        label: Payed
+        type: switch
+        scope: payedFilter
+

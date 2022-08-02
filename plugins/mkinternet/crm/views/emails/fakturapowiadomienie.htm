@@ -1,0 +1,59 @@
+subject = "[MK Internet] Powiadomienie o nowej fakturze"
+==
+
+Witam
+
+Przesyłamy fakturę o numerze {{numer}}.
+
+{% if not zaplacona==0 %}
+<p>Termin płatności {{ terminplatnosci|date('d-m-Y') }} </p>
+{% endif %}
+
+ 
+
+WAŻNA INFORMACJA:
+
+Zgodnie z orzeczeniem sądu administracyjnego sygn. akt I FSK 1444/09 informujemy,
+że podatnik ma prawo do odliczenia VAT z faktury przesłanej do niego w formacie PDF,
+którą następnie sam sobie wydrukuje. W związku z tym faktury będą Państwu
+dostarczane tylko formą elektroniczną.
+
+
+-- 
+Pozdrawiam
+
+Konrad Mańkiewicz
+GSM:    0-604 230 173
+e-mail: info@e-uslugi.com
+web:    www.e-uslugi.com
+
+==
+
+<p>Witam<br />
+<br />
+Przesyłamy fakturę o numerze <strong>{{numer}}</strong>.</p>
+
+{% if not zaplacona==0 %}
+	<p>Termin płatności {{ terminplatnosci|date('d-m-Y') }} </p>
+{% endif %}
+
+<p>&nbsp;</p>
+<p>WAŻNA INFORMACJA:<br />
+<br />
+Zgodnie z orzeczeniem sądu administracyjnego sygn. akt I FSK 1444/09 informujemy, 
+że podatnik ma prawo do odliczenia VAT z faktury przesłanej do niego w formacie PDF, 
+kt&oacute;rą następnie sam sobie wydrukuje. W związku z tym faktury będą Państwu dostarczane tylko formą elektroniczną.<br />
+
+
+<br />
+
+
+<br />
+<br />
+-- <br />
+Pozdrawiam<br />
+<br />
+Konrad Mańkiewicz<br />
+GSM:&nbsp;&nbsp;&nbsp; 0-604 230 173<br />
+e-mail: info@e-uslugi.com<br />
+web:&nbsp;&nbsp;&nbsp; www.e-uslugi.com</p>

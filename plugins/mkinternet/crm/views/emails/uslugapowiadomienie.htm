@@ -1,0 +1,56 @@
+subject = "Powiadomienie o wygasającej usługdze hostingowej"
+==
+
+Witam,
+
+Twoja usługa {{nazwa}} wygasa {{wygasa | date('d-m-Y')}}
+
+Proszę o uregulowanie płatności za utrzymanie strony www.
+Proforma za hosting została dołączona do e-maila.
+Po zaksięgowaniu przelewu zostanie Państwu wysłana faktura VAT.
+
+
+Jeżeli chcesz otrzymać od razu fakturę VAT za hosting kliknij tutaj.
+
+Ten e-mail został wysłany automatycznie. Prosimy na niego nie odpowiadać.
+
+-- 
+Pozdrawiam
+
+Konrad Mańkiewicz
+GSM: 0-604 230 173
+e-mail: info@e-uslugi.com
+web: www.e-uslugi.com
+
+==
+
+<p>Witam,<br />
+<br />
+Twoja usługa <strong>{{nazwa}}</strong> wygasa {{wygasa | date('d-m-Y')}}.<br />
+&nbsp;</p>
+
+<p>Roczna opłata za hosting wynosi {{cenabrutto}} brutto rocznie zgodnie z <a href="https://e-uslugi.com/uslugi/hosting">cennikiem</a></p>
+
+{% if klientrabat!='0,00zł' %}
+	<p>Twój rabat brutto: {{klientrabat}}</p>
+{% endif %}
+
+<p><br />
+
+Kwota do zapłaty: <strong>{{cenabruttorabat}}</strong>.<br />
+Tytuł przelewu: <strong>{{nazwa}} klient #{{klienci_id}}</strong><br />
+Odbiorca przelewu: <strong>MK Internet</strong><br />
+Numer konta: <strong>30 1140 2004 0000 3602 4644 4907</strong></p>
+<p>Po zaksięgowaniu przelewu zostanie Państwu wysłana faktura VAT.<br />
+<br />
+Jeżeli chcesz otrzymać od razu fakturę VAT za hosting kliknij <a href="mailto:info@e-uslugi.com?subject=proszę o wystawienie faktury VAT za hosting">tutaj</a>.<br />
+<br />
+Ten e-mail został wysłany automatycznie. Prosimy na niego nie odpowiadać.<br />
+<br />
+-- <br />
+Pozdrawiam<br />
+<br />
+Konrad Mańkiewicz<br />
+GSM: 0-604 230 173<br />
+e-mail: info@e-uslugi.com<br />
+web: www.e-uslugi.com</p>

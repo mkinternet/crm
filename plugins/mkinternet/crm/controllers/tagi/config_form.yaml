@@ -1,0 +1,10 @@
+name: Tagi
+form: $/mkinternet/crm/models/tagi/fields.yaml
+modelClass: Mkinternet\Crm\Models\Tagi
+defaultRedirect: mkinternet/crm/tagi
+create:
+    redirect: 'mkinternet/crm/tagi/update/:id'
+    redirectClose: mkinternet/crm/tagi
+update:
+    redirect: mkinternet/crm/tagi
+    redirectClose: mkinternet/crm/tagi

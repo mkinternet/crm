@@ -1,0 +1,10 @@
+name: Campagin
+form: $/mkinternet/newsletter/models/campagin/fields.yaml
+modelClass: Mkinternet\Newsletter\Models\Campagin
+defaultRedirect: mkinternet/newsletter/campagin
+create:
+    redirect: 'mkinternet/newsletter/campagin/update/:id'
+    redirectClose: mkinternet/newsletter/campagin
+update:
+    redirect: mkinternet/newsletter/campagin
+    redirectClose: mkinternet/newsletter/campagin

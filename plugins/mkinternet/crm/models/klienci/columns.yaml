@@ -1,0 +1,65 @@
+columns:
+    id:
+        label: ID
+        searchable: true
+        type: number
+    firma:
+        label: Firma
+        type: text
+        searchable: true
+        cssClass: t-nw        
+    osoba:
+        label: Osoba kontaktowa
+        type: text
+        searchable: true
+        cssClass: t-nw          
+    telefon:
+        label: Telefon
+        type: text
+        searchable: true
+        cssClass: t-nw
+    komorka:
+        label: Drugi telefon
+        type: text
+        searchable: true
+        cssClass: t-nw
+    created_at:
+        label: Dodany
+        type: date
+        cssClass: t-nw                
+    abonament:
+        label: Abonament
+        type: switch
+    adresemail:
+        label: 'Adres email'
+        type: text
+        searchable: true
+        cssClass: t-nw                
+    nip:
+        label: 'NIP'
+        type: text
+        searchable: true        
+        cssClass: t-nw                
+    kodmiasta:
+        label: 'Kod miasta'
+        type: text
+        searchable: true        
+        cssClass: t-nw  
+    miasto:
+        label: 'Miasto'
+        type: text
+        searchable: true        
+        cssClass: t-nw    
+    hosting:
+        label: Hosting
+        type: text
+        select: nazwa
+        relation: hosting
+    hostingrabat:
+        label: Hosting rabat
+        type: number
+    adres:
+        label: 'Adres'
+        type: text
+        searchable: true        
+        cssClass: t-nw 

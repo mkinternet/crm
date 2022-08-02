@@ -1,0 +1,4 @@
+title: Vat
+modelClass: Mkinternet\Crm\Models\Vat
+toolbar:
+    buttons: reorder_toolbar

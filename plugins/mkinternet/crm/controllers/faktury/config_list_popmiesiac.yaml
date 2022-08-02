@@ -1,0 +1,17 @@
+list: $/mkinternet/crm/models/faktury/columns.yaml
+customViewPath: $/mkinternet/crm/controllers/faktury/list
+modelClass: Mkinternet\Crm\Models\Faktury
+title: Faktury
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 200
+defaultSort: 
+    column: numer
+    direction: desc
+filter: config_filter_popmiesiac.yaml
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'mkinternet/crm/faktury/update/:id'

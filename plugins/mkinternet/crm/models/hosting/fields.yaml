@@ -1,0 +1,14 @@
+fields:
+    nazwa:
+        label: Nazwa
+        span: auto
+        type: text
+    cena:
+        label: Cena
+        span: auto
+        type: number
+    datawygasniecia:
+        label: 'Wybór daty'
+        span: auto
+        mode: date
+        type: datepicker

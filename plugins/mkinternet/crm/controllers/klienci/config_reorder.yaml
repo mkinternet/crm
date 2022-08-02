@@ -1,0 +1,4 @@
+title: Klienci
+modelClass: Mkinternet\Klienci\Models\Klienci
+toolbar:
+    buttons: reorder_toolbar

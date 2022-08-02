@@ -1,0 +1,27 @@
+<div class="control-tabs content-tabs tabs-flush" data-control="tab">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#faktury_tenmiesiac">Tenen miesiąc</a></li>
+        <li><a href="#faktury_wszystkie">Faktury wszystkie</a></li>
+        <li><a href="#faktury_popmiesiac">Poprzedni miesiąc</a></li>
+        <li><a href="#faktury_zalegle">Faktury zaległe</a></li>
+        <li><a href="#faktury_niezaplacone">Faktury niezapłacone</a></li>		
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active">
+            <?= $this->listRender('faktury_tenmiesiac') ?>
+        </div>
+        <div class="tab-pane">
+            <?= $this->listRender('faktury_wszystkie') ?>
+        </div>
+        <div class="tab-pane">
+            <?= $this->listRender('faktury_popmiesiac') ?>
+        </div>
+        <div class="tab-pane">
+            <?= $this->listRender('faktury_zalegle') ?>
+        </div>
+        <div class="tab-pane">
+            <?= $this->listRender('faktury_niezaplacone') ?>
+        </div>
+
+    </div>
+</div>

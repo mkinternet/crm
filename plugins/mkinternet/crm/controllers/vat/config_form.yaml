@@ -1,0 +1,10 @@
+name: Vat
+form: $/mkinternet/crm/models/vat/fields.yaml
+modelClass: Mkinternet\Slowniki\Models\Vat
+defaultRedirect: mkinternet/crm/vat
+create:
+    redirect: 'mkinternet/crm/vat/update/:id'
+    redirectClose: mkinternet/crm/vat
+update:
+    redirect: mkinternet/crm/vat
+    redirectClose: mkinternet/crm/vat

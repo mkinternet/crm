@@ -1,0 +1,15 @@
+uslugi:
+    label: Usługi
+    manage:
+        list: $/mkinternet/crm/models/uslugi/columns_search.yaml
+        form: $/mkinternet/crm/models/uslugi/fields.yaml
+        showSearch: true
+        showSorting: true
+        recordsPerPage: 10
+    view:
+        list: $/mkinternet/crm/models/uslugi/columns_search.yaml
+        recordUrl: mkinternet/crm/uslugi/update/:id
+        toolbarButtons: 'delete|create'
+        showSearch: true
+        showSorting: true
+        recordsPerPage: 10

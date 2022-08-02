@@ -1,0 +1,16 @@
+columns:
+    id:
+        label: id
+        type: number
+    created_at:
+        label: created_at
+        type: datetime
+    nazwa:
+        label: nazwa
+        type: text
+    cena:
+        label: cena
+        type: number
+    datawygasniecia:
+        label: datawygasniecia
+        type: text

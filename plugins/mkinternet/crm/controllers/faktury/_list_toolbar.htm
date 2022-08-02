@@ -1,0 +1,113 @@
+
+
+
+<div data-control="toolbar">
+        <a href="<?= Backend::url('mkinternet/crm/faktury/create') ?>" class="btn btn-primary oc-icon-plus"><?= e(trans('backend::lang.form.create')) ?></a>
+	
+	<button
+        class="btn btn-default oc-icon-trash-o"
+        disabled="disabled"
+        onclick="$(this).data('request-data', {
+            checked: $('.tab-content .active .control-list').listWidget('getChecked')
+        })"
+        data-request="onDelete"
+        data-request-confirm="<?= e(trans('backend::lang.list.delete_selected_confirm')) ?>"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-request-success="$(this).prop('disabled', true)"
+        data-stripe-load-indicator>
+        Usuń
+    </button>
+	
+	<button
+        class="btn btn-default oc-icon-envelope"
+        disabled="disabled"
+        onclick="$(this).data('request-data', {
+            checked: $('.tab-content .active .control-list').listWidget('getChecked'),
+			dolaczraport: 0
+        })"
+        data-request="onWyslijFaktura"
+        data-request-confirm="Wysłać faktury do podanych odbiorców?"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-request-success="$(this).prop('disabled', true)"
+        data-stripe-load-indicator>
+        Wyślij
+    </button>	
+	
+	<button
+        class="btn btn-default oc-icon-envelope"
+        disabled="disabled"
+        onclick="$(this).data('request-data', {
+            checked: $('.tab-content .active  .control-list').listWidget('getChecked'),
+			dolaczraport: 1
+        })"
+        data-request="onWyslijFaktura"
+        data-request-confirm="Wysłać faktury do podanych odbiorców?"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-request-success="$(this).prop('disabled', true)"
+        data-stripe-load-indicator>
+        Wyślij z raportem
+    </button>	
+
+
+	<button
+        class="btn btn-default oc-icon-envelope"
+        disabled="disabled"
+        onclick="$(this).data('request-data', {
+            checked: $('.tab-content .active .control-list').listWidget('getChecked'),
+			dolaczraport: 0
+        })"
+        data-request="onWyslijFakturaKsiegowa"
+        data-request-confirm="Wysłać faktury do ksiegowej?"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-request-success="$(this).prop('disabled', true)"
+        data-stripe-load-indicator>
+        Wyślij księgowej
+    </button>	
+	
+	
+
+	<button
+        class="btn btn-default oc-icon-print"
+        disabled="disabled"
+        onclick="$(this).data('request-data', {
+            checked: $('.tab-content .active .control-list').listWidget('getChecked'),
+			duplikat: true
+        })"
+        data-request="onDrukujFaktura"
+        data-request-confirm="Wydrukować zaznaczone faktury?"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-request-success="$(this).prop('disabled', true)"
+        data-stripe-load-indicator>
+        Drukuj 
+    </button>
+
+	<button
+        class="btn btn-default oc-icon-envelope"
+        disabled="disabled"
+        onclick="$(this).data('request-data', {
+            checked: $('.tab-content .active .control-list').listWidget('getChecked'),
+			duplikat: true
+        })"
+        data-request="onWyslijFaktura"
+        data-request-confirm="Wysłać faktury do podanych odbiorców?"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-request-success="$(this).prop('disabled', true)"
+        data-stripe-load-indicator>
+        Wyślij duplikat 
+    </button>
+	
+</div>
+
+

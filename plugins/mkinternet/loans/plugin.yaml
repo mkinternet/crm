@@ -1,0 +1,11 @@
+plugin:
+    name: 'mkinternet.loans::lang.plugin.name'
+    description: 'mkinternet.loans::lang.plugin.description'
+    author: Mkinternet
+    icon: oc-icon-money
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Loans
+        url: mkinternet/loans/loan
+        icon: icon-money
