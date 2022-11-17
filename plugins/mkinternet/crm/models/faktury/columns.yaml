@@ -6,11 +6,10 @@ columns:
     numer:
         label: Numer
         type: text
-    klienci_id:
+    firmanazwa:
         label: Klient
         type: text
-        select: firma
-        relation: klienci
+        valueFrom: firmanazwa
     zaplacona:
         label: Zapłacona
         type: inetis-list-switch

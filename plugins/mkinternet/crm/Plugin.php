@@ -157,6 +157,18 @@ class Plugin extends PluginBase
 							'conditions' => "created_at >= ':after' AND created_at <= ':before'"
 							],
 					   ]);
+				}	
+				
+				if($widget->alias=='uslugi_popmiesiacFilter'){
+
+					$widget->addScopes([
+						'datadodaniauslugi' => [
+							'label' => 'Data dodania',
+							'type' => 'daterange',
+							'default' => $this->filtrDomyslnaDataPopMiesiac(),
+							'conditions' => "created_at >= ':after' AND created_at <= ':before'"
+							],
+					   ]);
 				}				
 
 			}

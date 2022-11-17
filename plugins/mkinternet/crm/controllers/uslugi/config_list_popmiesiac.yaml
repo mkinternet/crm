@@ -4,14 +4,14 @@ customViewPath: $/mkinternet/crm/controllers/uslugi/list
 list: $/mkinternet/crm/models/uslugi/columns.yaml
 recordUrl: 'mkinternet/crm/uslugi/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
-recordsPerPage: 400
+recordsPerPage: 20
 showSetup: true
 showCheckboxes: true
 defaultSort:
     column: created_at
-    direction: desc
+    direction: asc
     
-filter: config_filter.yaml
+filter: config_filter_tenmiesiac.yaml
     
 toolbar:
     buttons: list_toolbar

@@ -87,3 +87,6 @@
 1.0.30:
     - 'Updated table mkinternet_crm_klienci'
     - builder_table_update_mkinternet_crm_klienci_4.php
+1.0.31:
+    - 'Updated table mkinternet_crm_klienci'
+    - builder_table_update_mkinternet_crm_klienci_5.php

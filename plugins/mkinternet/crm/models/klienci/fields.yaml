@@ -5,6 +5,11 @@ tabs:
             span: auto
             type: text
             tab: 'Dane podstawowe'
+        nazwakrotka:
+            label: Nazwa krótka
+            span: auto
+            type: text
+            tab: 'Dane podstawowe'            
         osoba:
             label: 'Osoba kontaktowa'
             span: auto

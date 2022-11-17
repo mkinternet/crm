@@ -9,10 +9,14 @@ columns:
         type: date
         format: d-m-Y
         cssClass: t-nw
-    klient_id:
+    firmanazwa:
         label: Klient
         type: text
-        select: firma
+        valueFrom: firmanazwa
+    klient_id:
+        label: Klient ID
+        type: number
+        select: id
         relation: klienci
     cena:
         label: 'Cena netto'

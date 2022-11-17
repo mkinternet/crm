@@ -5,7 +5,7 @@ title: Faktury
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
 showCheckboxes: true
-recordsPerPage: 200
+recordsPerPage: 400
 defaultSort: 
     column: numer
     direction: desc

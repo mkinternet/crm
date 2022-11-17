@@ -3,6 +3,6 @@ scopes:
         label: Wygasajaca
         type: checkbox
         default: 1
-        conditions: not isnull(wygasa) AND przedluzona=0 AND wygasa<DATE_ADD(NOW(), INTERVAL 30 DAY) AND klienci_id IN (SELECT id FROM mkinternet_crm_klienci where abonament=1)
+        conditions: not isnull(wygasa) AND (przedluzona=0) AND wygasa<DATE_ADD(NOW(), INTERVAL 30 DAY) AND klienci_id IN (SELECT id FROM mkinternet_crm_klienci where abonament=1)
 
 

@@ -146,6 +146,13 @@ class Faktury extends Model
 		
     }	
 	
+    public function getFirmanazwaAttribute() {
+		
+		$firmanazwa = ($this->klienci->nazwakrotka!='') ? $this->klienci->nazwakrotka : $this->klienci->firma;
+		
+        return $firmanazwa;
+		
+    }	
 	
 	
 

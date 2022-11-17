@@ -116,14 +116,18 @@ class Uslugi extends Model
 
 	
 	
+    public function getFirmanazwaAttribute() {
+		
+		$firmanazwa = ($this->klienci->nazwakrotka!='') ? $this->klienci->nazwakrotka : $this->klienci->firma;
+		
+        return $firmanazwa;
+		
+    }	
 	
 	
     public function getCenaNettoWalutaAttribute() {
 		
-		//dd($this);
-		
         return CurrencyHelper::format($this->cena, ['format' => $this->waluta]);
-		//return $this->cena.' '.$this->waluta;
     }
 	
 }

@@ -28,12 +28,12 @@ class Uslugi extends Controller
     public $listConfig = [
         'uslugi_wszystkie' => 'config_list.yaml',
         'uslugi_tenmiesiac' => 'config_list_tenmiesiac.yaml',
+        'uslugi_popmiesiac' => 'config_list_popmiesiac.yaml',
         'uslugi_wrealizacji' => 'config_list_wrealizacji.yaml',
 		'uslugi_wygasajace' => 'config_list_wygasajace.yaml',
     ];	
 	
     public $formConfig = 'config_form.yaml';
-   // public $reorderConfig = 'config_reorder.yaml';
 
 
 /*

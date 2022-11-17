@@ -1,0 +1,29 @@
+scopes:
+  
+    status:
+        label: Status
+        modelClass: Mkinternet\Crm\Models\Uslugistatus
+        conditions: uslugistatus_id in (:filtered)
+        nameFrom: nazwa
+
+    klient:
+        label: Klient
+        type: text
+        scope: klienciFiltr
+        size: 8   
+    nazwa:
+        label: Usługa
+        type: text
+        scope: uslugiFiltr
+    zaplacona:
+        label: Zapłacona
+        type: switch
+        default: 0
+        conditions: (zaplacona+1) = :filtered
+    fakturaniewystawiona:
+        label: Faktura
+        type: switch
+        default: 0
+        conditions: IF(:filtered=1,faktury_id=0,faktury_id!=0)
+
+
